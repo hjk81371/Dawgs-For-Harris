@@ -1,0 +1,107 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: #333;
+  }
+  
+  .voting-registration-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .voting-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .voting-header h1 {
+    font-size: 2.5rem;
+    color: #1C59CC;
+    margin-bottom: 0.5rem;
+  }
+  
+  .voting-header p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .voting-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .voting-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .voting-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .voting-card h2 {
+    font-size: 1.8rem;
+    color: #1C59CC;
+    margin-bottom: 1rem;
+  }
+  
+  .voting-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+  
+  .voting-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #006699;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .voting-button:hover {
+    background-color: #004466;
+  }
+  
+  @media (max-width: 768px) {
+    .voting-registration-page {
+      padding: 1rem;
+    }
+  
+    .voting-header h1 {
+      font-size: 2rem;
+    }
+  
+    .voting-header p {
+      font-size: 1rem;
+    }
+  
+    .voting-card {
+      padding: 1rem;
+    }
+  
+    .voting-card h2 {
+      font-size: 1.5rem;
+    }
+  
+    .voting-button {
+      font-size: 0.9rem;
+    }
+  }
+  

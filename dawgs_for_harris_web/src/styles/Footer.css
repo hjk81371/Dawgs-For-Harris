@@ -1,0 +1,39 @@
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px;
+    background-color: #1C59CC;
+    width: 100%;
+    font-family: serif;
+  }
+  
+  .footer-image {
+    width: 100%;
+  }
+  
+  .social-logo {
+    transition: 1s ease;
+    width: 4%;
+  }
+
+  .social-logo:hover {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+    cursor: pointer;
+}
+
+  .social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 3%;
+  }
+
+  .uga-logo {
+    width: 15%;
+    margin: 3%;
+  }

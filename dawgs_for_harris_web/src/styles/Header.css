@@ -1,14 +1,19 @@
 .active{
-    text-decoration: underline;
+    font-weight: bold;
 }
 
 #join-button {
     background-color: red;
-    border-radius: 40%;
+    color: white;
+    border-radius: 10%;
 }
 
-#join-button:hover {
-    text-decoration: underline;
+#join-button a {
+    color: white;
+}
+
+#join-button a:hover {
+    color: blue;
 }
 
 nav {
@@ -16,40 +21,39 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: #FEF5E1;
-    color: #1C59CC;
     position: sticky;
     top: 0;
     width: 100%;
     font-family: serif;
 }
 
-nav .title {
-    font-size: 1.5rem;
-    margin: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: #1C59CC;
+.title {
+    width: 20%;
+    margin-left: 8%;
 }
 
 nav ul {
     display: flex;
+    margin-right: 8%;
 }
 
-nav ul li {
+.nav-list-item {
    list-style: none; 
 }
 
-nav ul li a {
+.nav-list-item a {
     display: block;
     text-decoration: none;
+    font-weight: bolder;
+    font-size: larger;
     color: #1C59CC;
     padding: 0.5rem;
     margin: 0 0.5rem;
     border-radius: 0.5rem;
 }
 
-nav ul li a:not(.active):hover {
-    text-decoration: underline;
+.nav-list-item a:not(.active):hover {
+    color: blue;
 }
 
 nav .menu {
@@ -92,13 +96,17 @@ nav .menu span {
         display: flex;
     }
 
-    nav ul li {
+    .nav-list-item {
         width: 100%;
         text-align: center;
     }
 
-    nav ul li a {
+    .nav-list-item a {
         margin: 0.2rem 0.5rem;
+    }
+
+    .header-image {
+        width: 100%;
     }
 
 }

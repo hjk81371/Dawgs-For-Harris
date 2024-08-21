@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     min-height: 300px;
-    background-color: #1C59CC;
+    background-color: rgb(12,25,55);
     width: 100%;
     font-family: serif;
   }
@@ -15,7 +15,7 @@
   
   .social-logo {
     transition: 1s ease;
-    width: 4%;
+    width: 12%;
   }
 
   .social-logo:hover {
@@ -30,10 +30,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 3%;
+    margin: 5%;
   }
 
   .uga-logo {
     width: 15%;
     margin: 3%;
+  }
+
+  .footer-text {
+    margin-bottom: 3%;
+    color: white;
   }

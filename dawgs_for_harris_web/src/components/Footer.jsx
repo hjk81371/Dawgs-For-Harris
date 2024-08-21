@@ -8,6 +8,10 @@ import xLogo from '../assets/twitter-alt.svg'
 import { useNavigate } from 'react-router-dom';
 import dawgsBlue from '../assets/dawgs-blue.svg'
 import ugaLogo from '../assets/ugaLogo.png'
+import dawgsTransparent from '../assets/dawgs-transparent.png'
+import instagramWhite from '../assets/instagram-white.png'
+import tiktokWhite from '../assets/tiktok-white.png'
+import xWhite from '../assets/x-white.png'
 
 
 
@@ -30,13 +34,13 @@ const Footer = () => {
 
   return (
     <div className="footer-container">
-        <img className='uga-logo' src={ugaLogo} />
+        <img className='uga-logo' src={dawgsTransparent} />
         <div className='social-links'>
-            <img className='social-logo' src={tiktokLogo} onClick={handleTikTokClick} />
-            <img className='social-logo' src={instagramLogo} onClick={handleInstagramClick} />
-            <img className='social-logo' src={xLogo} onClick={handleXClick} />
+            <img className='social-logo' src={tiktokWhite} onClick={handleTikTokClick} />
+            <img className='social-logo' src={instagramWhite} onClick={handleInstagramClick} />
+            <img className='social-logo' src={xWhite} onClick={handleXClick} />
         </div>
-        <h3>The University of Georgia Dawgs for Harris</h3>
+        <h3 className='footer-text'>The University of Georgia Dawgs for Harris</h3>
     </div>
   );
 }

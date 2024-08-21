@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import "../styles/Header.css";
 import { Link, NavLink } from "react-router-dom";
 import dawgsTransparent from '../assets/dawgs-transparent.png'
+import dawgsBlue from '../assets/dawgs-blue.svg'
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
         <nav>
             <Link to="/" className="title">
-                <img src={dawgsTransparent} alt="Dawgs For Harris" className="icon" />
+                <img src={dawgsBlue} alt="Dawgs For Harris" className="header-image" />
             </Link>
             <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
                 <span></span>
@@ -16,16 +17,16 @@ const Header = () => {
                 <span></span>
             </div>
             <ul className={menuOpen ? "open" : ""}>
-                <li>
+                <li className="nav-list-item">
                     <NavLink to="/policy">Policy</NavLink>
                 </li>
-                <li>
+                <li className="nav-list-item">
                     <NavLink to="/vote">Voting/Registration</NavLink>
                 </li>
-                <li>
+                <li className="nav-list-item">
                     <NavLink to="/memes">Memes</NavLink>
                 </li>
-                <li id="join-button">
+                <li className="nav-list-item" id="join-button">
                     <NavLink to="/join">Join</NavLink>
                 </li>
             </ul>

@@ -1,5 +1,5 @@
 .home-container {
-    background-color: #FEF5E1;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,4 +18,5 @@
   
   .splash-image {
     width: 30%;
+    margin-top: 3%;
   }

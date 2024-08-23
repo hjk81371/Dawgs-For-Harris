@@ -21,3 +21,9 @@
     width: 30%;
     margin-top: 3%;
   }
+
+  @media screen and (max-width: 810px) {
+    .splash-image {
+      min-width: 445px;
+    }
+  }

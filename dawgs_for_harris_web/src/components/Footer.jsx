@@ -34,7 +34,7 @@ const Footer = () => {
 
   return (
     <div className="footer-container">
-        <img className='uga-logo' src={dawgsTransparent} />
+        <img className='footer-image' src={dawgsTransparent} />
         <div className='social-links'>
             <img className='social-logo' src={tiktokWhite} onClick={handleTikTokClick} />
             <img className='social-logo' src={instagramWhite} onClick={handleInstagramClick} />

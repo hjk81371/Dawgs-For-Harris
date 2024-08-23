@@ -33,7 +33,7 @@
     margin: 5%;
   }
 
-  .uga-logo {
+  .footer-image {
     width: 15%;
     margin: 3%;
   }
@@ -41,4 +41,11 @@
   .footer-text {
     margin-bottom: 3%;
     color: white;
+  }
+
+  @media screen and (max-width: 810px) {
+    .footer-image {
+      min-width: 165px;
+      min-height: auto;
+    }
   }

@@ -30,14 +30,14 @@
   
   .about-content h1 {
     font-size: 2.5rem;
-    color: #003366;
+    color: #1C59CC;
     margin-bottom: 1rem;
   }
   
   .about-content p {
     font-size: 1.2rem;
     line-height: 1.8;
-    color: #555;
+    color: rgb(12,25,55);
     margin-bottom: 1.5rem;
   }
   

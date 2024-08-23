@@ -1,26 +1,32 @@
 import React from 'react';
 import '../styles/MemesPage.css';
 
+import windowImage from '../assets/window.JPG'
+import footballImage from '../assets/football.JPG'
+import harryImage from '../assets/harry.JPG'
+import olympicsImage from '../assets/olympics.JPG'
+import catImage from '../assets/cat.webp'
+import saladImage from '../assets/salad.jpg'
+import bratImage from '../assets/brat.webp'
+
 const memes = [
-  { src: 'https://via.placeholder.com/400x400', alt: 'Meme 1' },
-  { src: 'https://via.placeholder.com/400x400', alt: 'Meme 2' },
-  { src: 'https://via.placeholder.com/400x400', alt: 'Meme 3' },
-  { src: 'https://via.placeholder.com/400x400', alt: 'Meme 4' },
-  { src: 'https://via.placeholder.com/400x400', alt: 'Meme 5' },
-  { src: 'https://via.placeholder.com/400x400', alt: 'Meme 6' },
+  windowImage,
+  footballImage,
+  harryImage,
+  olympicsImage,
+  catImage,
+  saladImage,
+  bratImage
 ];
 
 const MemesPage = () => {
   return (
     <div className="memes-page">
-      <header className="memes-header">
-        <h1>Campaign Memes</h1>
-        <p>Because every campaign needs a little humor. Enjoy these memes about our candidate!</p>
-      </header>
-      <div className="memes-gallery">
+      <h1>Memes</h1>
+      <div className="memes-grid">
         {memes.map((meme, index) => (
-          <div className="meme-card" key={index}>
-            <img src={meme.src} alt={meme.alt} />
+          <div key={index} className="meme-item">
+            <img src={meme} alt={`Meme ${index + 1}`} />
           </div>
         ))}
       </div>

@@ -15,7 +15,6 @@ const Home = () => {
     <div className="home-container">
         <img className='splash-image' src={letsWin} />
       <AboutPage />
-      <Footer />
     </div>
   );
 }

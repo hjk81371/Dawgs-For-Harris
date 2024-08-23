@@ -40,15 +40,34 @@ const VotingRegistrationPage = () => {
         <p>Make a difference. Get registered. Vote early.</p>
       </header>
       <div className="voting-options">
-        {votingInfo.map((info, index) => (
-          <div className="voting-card" key={index}>
-            <h2>{info.title}</h2>
-            <p>{info.description}</p>
-            <a href={info.link} className="voting-button" target="_blank" rel="noopener noreferrer">
-              {info.buttonText}
+
+        <div className="voting-card" key={0}>
+            <h2>{votingInfo[0].title}</h2>
+            <p>{votingInfo[0].description}</p>
+            <a href={votingInfo[0].link} className="voting-button" target="_blank" rel="noopener noreferrer">
+              {votingInfo[0].buttonText}
             </a>
           </div>
-        ))}
+
+          <div className="voting-card" key={1}>
+            <h2>{votingInfo[1].title}</h2>
+            <p>{votingInfo[1].description}</p>
+            <a href={votingInfo[1].link} className="voting-button" target="_blank" rel="noopener noreferrer">
+            {votingInfo[1].buttonText}
+            </a>
+          </div>
+
+          <div className="voting-card" key={2}>
+            <h2>{votingInfo[2].title}</h2>
+            <p>{votingInfo[2].description}</p>
+            <a href={votingInfo[2].link} className="voting-button" target="_blank" rel="noopener noreferrer">
+              {votingInfo[2].buttonText}
+            </a> 
+            <a href={votingInfo[3].link} className="voting-button" target="_blank" rel="noopener noreferrer">
+              {votingInfo[3].buttonText}
+            </a>
+          </div>
+
       </div>
     </div>
   );

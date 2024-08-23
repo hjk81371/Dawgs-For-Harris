@@ -27,7 +27,7 @@ const Header = () => {
                     <NavLink to="/memes">Memes</NavLink>
                 </li>
                 <li className="nav-list-item" id="join-button">
-                    <NavLink to="/join">Join</NavLink>
+                    <a href="https://groupme.com/join_group/99846369/9Mm8yIkb" target="_blank">Join</a>
                 </li>
             </ul>
         </nav>

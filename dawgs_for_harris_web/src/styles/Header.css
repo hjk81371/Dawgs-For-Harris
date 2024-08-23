@@ -3,7 +3,7 @@
 }
 
 #join-button {
-    background-color: red;
+    background-color: #FD2E3C;
     color: white;
     border-radius: 10%;
 }
@@ -21,7 +21,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: #FEF5E1;
-    position: sticky;
     top: 0;
     width: 100%;
     font-family: serif;
@@ -107,6 +106,12 @@ nav .menu span {
 
     .header-image {
         width: 100%;
+    }
+
+    #join-button {
+        align-self: center;
+        width: 35%;
+        border-radius: 0%;
     }
 
 }
